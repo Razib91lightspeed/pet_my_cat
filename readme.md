@@ -91,7 +91,7 @@ The cat should appear on the OLED immediately.
 
 | Action | What Happens |
 |--------|--------------|
-| **Touch the sensor** | Cat jumps happily, tail wags fast, message shows `Purr... &lt;3` |
+| **Touch the sensor** | Cat jumps happily, tail wags fast, message shows `Happy... &lt;3` |
 | **Hold your finger** | Cat keeps bouncing in the center |
 | **Release finger** | Cat continues jumping for **3 seconds** (`Yay! :3`), then goes back to waiting |
 | **Ignore for 10 min** | Cat sits low with flat ears and angry face (`I'm angry!`) |

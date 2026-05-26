@@ -13,7 +13,7 @@ An interactive manga-style cat animation on a 128×64 OLED display, controlled b
 | State | Behavior | Screen |
 |-------|----------|--------|
 | **Waiting** | Sits and blinks, tail gently sways | `Pet me please` |
-| **Petting** | Jumps up and down, fast tail wag | `Purr... &lt;3` |
+| **Petting** | Jumps up and down, fast tail wag | `Happy... &lt;3` |
 | **Afterglow** | Keeps jumping 3 more seconds after release | `Yay! :3` |
 | **Angry** | Ears flat, tail down, frown | `I'm angry!` |
 

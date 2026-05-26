@@ -1,6 +1,6 @@
 # 🐱 Suzume Cat — Interactive OLED Pet
 
-An interactive manga-style cat animation on a 128×64 OLED display, controlled by a touch sensor. The cat reacts when you pet it, stays happy for a few seconds after, and gets angry if you ignore it for too long.
+An interactive manga-style cat animation on a 128×64 OLED display, controlled by a touch sensor. The cat reacts when you pet it, stays Kimuchi for a few seconds after, and gets angry if you ignore it for too long.
 
 &gt; Inspired by the cat from **Suzume no Tojimari** (すずめの戸締まり).
 
@@ -13,7 +13,7 @@ An interactive manga-style cat animation on a 128×64 OLED display, controlled b
 | State | Behavior | Screen |
 |-------|----------|--------|
 | **Waiting** | Sits and blinks, tail gently sways | `Pet me please` |
-| **Petting** | Jumps up and down, fast tail wag | `Happy... &lt;3` |
+| **Petting** | Jumps up and down, fast tail wag | `Kimuchi... &lt;3` |
 | **Afterglow** | Keeps jumping 3 more seconds after release | `Yay! :3` |
 | **Angry** | Ears flat, tail down, frown | `I'm angry!` |
 
@@ -91,11 +91,11 @@ The cat should appear on the OLED immediately.
 
 | Action | What Happens |
 |--------|--------------|
-| **Touch the sensor** | Cat jumps happily, tail wags fast, message shows `Happy... &lt;3` |
+| **Touch the sensor** | Cat jumps happily, tail wags fast, message shows `Kimuchi... &lt;3` |
 | **Hold your finger** | Cat keeps bouncing in the center |
 | **Release finger** | Cat continues jumping for **3 seconds** (`Yay! :3`), then goes back to waiting |
 | **Ignore for 10 min** | Cat sits low with flat ears and angry face (`I'm angry!`) |
-| **Touch when angry** | Instantly resets to happy jumping! |
+| **Touch when angry** | Instantly resets to Kimuchi jumping! |
 
 ---
 
@@ -104,12 +104,12 @@ The cat should appear on the OLED immediately.
 You can tweak the timing in the code:
 
     #define ANGRY_TIMEOUT 600000UL  // Time before angry (ms) -&gt; 10 minutes
-    #define AFTERGLOW_MS  3000UL    // Happy time after release (ms) -&gt; 3 seconds
+    #define AFTERGLOW_MS  3000UL    // Kimuchi time after release (ms) -&gt; 3 seconds
 
 | Constant        | Default | Description                                      |
 |-----------------|---------|--------------------------------------------------|
 | ANGRY_TIMEOUT   | 600000  | Milliseconds before cat gets angry (10 min)      |
-| AFTERGLOW_MS    | 3000    | Milliseconds cat stays happy after you let go (3 sec) |
+| AFTERGLOW_MS    | 3000    | Milliseconds cat stays Kimuchi after you let go (3 sec) |
 | TOUCH_PIN       | 2       | Digital pin for touch sensor                     |
 
 ---
